@@ -6,7 +6,7 @@ let team = [
       city: "Zaragoza",
       hobby: "reading",
       favoriteFood: "ramen",
-      favoriteVideoGame: "Persona 5 Royale",
+      favoriteVideoGame: "Persona 5 Royal",
       favoriteFilm: "La novia",
       favoriteBook: "El archivo de las tormentas - Brandon Sanderson",
       petName: "Zoro",
