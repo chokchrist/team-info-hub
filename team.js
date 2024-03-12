@@ -12,3 +12,11 @@ let team = [
       petName: "Zoro",
     },
   ];
+function calcularMedia(array) {
+  let sumatoria = 0;
+  for (let i = 0; i < array.length; i++) {
+      sumatoria += array[i].age;
+  }
+  let media = sumatoria / array.length;
+  return media;
+}
