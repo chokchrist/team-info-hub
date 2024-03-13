@@ -13,21 +13,21 @@ let team = [
   },
 ];
 
-function cicloBubbleSort(words) {
+function cicleBubbleSort(members) {
   let change = false;
 
-  for (let i = 0; i < words.length - 1; i++) {
-    let comparison = words[i].surname.localeCompare(
-      words[i + 1].surname,
+  for (let i = 0; i < members.length - 1; i++) {
+    let comparison = members[i].surname.localeCompare(
+      members[i + 1].surname,
       "es",
       {
         sensitivity: "base",
       }
     );
     if (comparison > 0) {
-      let aux = words[i].surname;
-      words[i].surname = words[i + 1].surname;
-      words[i + 1].surname = aux;
+      let aux = members[i].surname;
+      members[i].surname = members[i + 1].surname;
+      members[i + 1].surname = aux;
 
       change = true;
     }
@@ -35,11 +35,11 @@ function cicloBubbleSort(words) {
   return change;
 }
 
-function orderArray(disorderArray) {
-  let result = cicloBubbleSort(disorderArray);
+function alphabeticalOrder(disorderArray) {
+  let result = cicleBubbleSort(disorderArray);
 
   while (result == true) {
-    result = cicloBubbleSort(disorderArray);
+    result = cicleBubbleSort(disorderArray);
   }
 
   for (let i = 0; i < disorderArray.length; i++) {
@@ -47,4 +47,4 @@ function orderArray(disorderArray) {
   }
 }
 
-orderArray(team);
+alphabeticalOrder(team);
