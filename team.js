@@ -11,12 +11,18 @@ let team = [
     petName: "Lluna"
     },
 ];
-
 function favGame (){
-    if(team.favoriteVideoGame == "LOL"){
-        console.log(team.name);
-    } else if(team.favoriteVideoGame == "League of Legends"){
-        console.log(team.name);
+    for(let i = 0; i < team.length; i++){
+        let teamMember = team[i].name
+        let teamFavGame = team[i].favoriteVideoGame
+
+        if(teamFavGame == "LOL"){
+            console.log(`${teamMember} chose League of Legends as their favorite game.`);
+        } else if(teamFavGame == "League of Legends"){
+            console.log(`${teamMember} chose League of Legends as their favorite game.`);
+        } else {
+            console.log("No one chose League of Legends as their favorite game.");
+        }
     }
 }
 favGame()
