@@ -25,7 +25,7 @@ let team = [
   },
 ];
 
-function cicleBubbleSort(words) {
+function cicloBubbleSort(words) {
   let change = false;
 
   for (let i = 0; i < words.length - 1; i++) {
@@ -43,13 +43,13 @@ function cicleBubbleSort(words) {
   return change;
 }
 
-function alphabeticalOrder(disorderArray) {
-  let result = cicleBubbleSort(disorderArray);
+function orderArray(disorderArray) {
+  let result = cicloBubbleSort(disorderArray);
 
   while (result == true) {
-    result = cicleBubbleSort(disorderArray);
+    result = cicloBubbleSort(disorderArray);
   }
   console.log(disorderArray);
 }
 
-alphabeticalOrder(team);
+orderArray(team)
