@@ -52,4 +52,4 @@ function alphabeticalOrder(disorderArray) {
   console.log(disorderArray);
 }
 
-alphabeticalOrder(team)
+alphabeticalOrder(team);
