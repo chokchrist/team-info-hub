@@ -32,6 +32,7 @@ function cicleBubbleSort(members) {
       change = true;
     }
   }
+  
   return change;
 }
 
