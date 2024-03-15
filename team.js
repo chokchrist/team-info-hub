@@ -45,6 +45,18 @@ let team = [
     favoriteBook: "Mistborn Series",
     petName: "Asta",
   },
+  {
+    name: "María",
+    surname: "Bona",
+    age: 29,
+    city: "Zaragoza",
+    hobby: "reading",
+    favoriteFood: "ramen",
+    favoriteVideoGame: "Persona 5 Royal",
+    favoriteFilm: "La novia",
+    favoriteBook: "El archivo de las tormentas - Brandon Sanderson",
+    petName: "Zoro",
+  },
 ];
 
 let nombresRepetidos = false;
@@ -127,7 +139,19 @@ function alphabeticalOrder(disorderArray) {
   }
 }
 
+
+    
+function calcularMedia(array) {
+  let sumatoria = 0;
+  for (let i = 0; i < array.length; i++) {
+      sumatoria += array[i].age;
+  }
+  let media = sumatoria / array.length;
+  return console.log("La edad media es: " + media);
+}
+
 alphabeticalOrder(team);
 favGame(team);
 printPetName(team);
 nombresDuplicados(team);
+calcularMedia(team);
