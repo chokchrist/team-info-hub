@@ -11,7 +11,7 @@ let Ruben = {
     petName: "Darko",
   };
   
-  let team = [Ruben,Ruben2]
+  let team = [Ruben]
   
   let nombresRepetidos = false;
   
