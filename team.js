@@ -115,9 +115,9 @@ let team = [
         }
       );
       if (comparison > 0) {
-        let aux = members[i].surname;
-        members[i].surname = members[i + 1].surname;
-        members[i + 1].surname = aux;
+        let aux = members[i];
+        members[i] = members[i + 1];
+        members[i + 1] = aux;
   
         change = true;
       }
